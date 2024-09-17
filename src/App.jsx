@@ -6,7 +6,7 @@ import ProtectedRoute from "./compenents/ProtectedRoute";
 import Listeler from "./compenents/listeler";
 import AuthLayout from "./compenents/AuthLayout";
 import MainLayout from "./compenents/mainlayout";
-
+import NotFound from "./compenents/NotFound";
 import ForgotPassword from "./compenents/ForgotPassword";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/ForgotPass" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
 
         <Route element={<MainLayout />}>
