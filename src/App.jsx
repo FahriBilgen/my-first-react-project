@@ -7,6 +7,7 @@ import Listeler from "./compenents/listeler";
 import AuthLayout from "./compenents/AuthLayout";
 import MainLayout from "./compenents/mainlayout";
 import ForgotPassword from "./compenents/ForgotPassword";
+
 function App() {
   return (
     <Router>
