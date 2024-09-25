@@ -1,12 +1,16 @@
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-import { Provider } from "react-redux";
-import { store } from "./stores/store.js";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+export default defineConfig({
+  plugins: [react()],
+  base: "/my-first-react-project/",
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
+  },
+})
