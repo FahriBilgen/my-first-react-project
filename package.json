@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",  // Bu satırı ekle
-    "deploy": "gh-pages -d dist"   // Bu satırı ekle
+    "predeploy": "npm run build",  
+    "deploy": "gh-pages -d dist"   
   },
   "dependencies": {
     "firebase": "10.13",
